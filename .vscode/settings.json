@@ -1,0 +1,26 @@
+{
+    // Editor
+    "editor.formatOnSave": false,
+    "editor.formatOnPaste": false,
+    "editor.formatOnType": false,
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    // Prettier
+    "prettier.useEditorConfig": true,
+    "prettier.tabWidth": 4,
+    "prettier.useTabs": false,
+    "prettier.bracketSameLine": false,
+    "prettier.bracketSpacing": true,
+    // CSS
+    "css.format.enable": true,
+    "css.format.newlineBetweenSelectors": true,
+    "css.format.braceStyle": "expand",
+    // LiveServer
+    "liveServer.settings.host": "127.0.0.1",
+    "liveServer.settings.CustomBrowser": "microsoft-edge",
+    // Config for File Extension
+    "[html]": {},
+    "[css]": {},
+    "[javascript]": {},
+    "[php]": {},
+    "[json]": {}
+}
