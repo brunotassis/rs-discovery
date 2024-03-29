@@ -56,9 +56,13 @@ body *
 #container
 {
     width    : 100%;
+    height   : 100% ;
     max-width: 588px;
     margin   : 0px auto 0px auto;
     padding  : 56px 24px 0px;
+
+    display: flex;
+    flex-direction: column;
 }
 
 /* Area de perfil do cartão */
@@ -105,12 +109,13 @@ body *
     z-index  : 1;
     transform: translateY(-50%);
     cursor: pointer;
+
+    animation: slide-back 0.2s;
 }
 
 .light #switch button
 {
-    right: 0;
-    left: initial;
+    animation: slide-in 0.2s forwards;
 }
 
 #switch span
@@ -206,9 +211,30 @@ footer
     {
         --page-bg-url: url('./assets/bg-desktop.jpg');
     }
-    
+
     .light
     {
         --page-bg-url: url('./assets/bg-desktop-light.jpg');
+    }
+}
+
+/* animations */
+@keyframes slide-in {
+    from {
+        left: 0;
+    }
+
+    to {
+        left: 50%;
+    }
+}
+
+@keyframes slide-back {
+    from {
+        left: 50%;
+    }
+
+    to {
+        left: 0;
     }
 }
